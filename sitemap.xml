@@ -3,17 +3,29 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://doracl.github.io/post/</loc>
+    <lastmod>2019-05-11T14:16:58+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://doracl.github.io/post/20190511/</loc>
+    <lastmod>2019-05-11T14:16:58+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://doracl.github.io/</loc>
+    <lastmod>2019-05-11T14:16:58+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://doracl.github.io/tags/</loc>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://doracl.github.io/topics/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://doracl.github.io/</loc>
     <priority>0</priority>
   </url>
   
