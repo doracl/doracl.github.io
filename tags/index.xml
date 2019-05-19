@@ -7,9 +7,46 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy; 2019. All rights reserved.</copyright>
+    <lastBuildDate>Sun, 12 May 2019 15:20:20 +0800</lastBuildDate>
     
 	<atom:link href="https://doracl.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>docker</title>
+      <link>https://doracl.github.io/tags/docker/</link>
+      <pubDate>Sun, 12 May 2019 15:20:20 +0800</pubDate>
+      
+      <guid>https://doracl.github.io/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kafka</title>
+      <link>https://doracl.github.io/tags/kafka/</link>
+      <pubDate>Sun, 12 May 2019 15:20:20 +0800</pubDate>
+      
+      <guid>https://doracl.github.io/tags/kafka/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vscode</title>
+      <link>https://doracl.github.io/tags/vscode/</link>
+      <pubDate>Sun, 12 May 2019 15:20:20 +0800</pubDate>
+      
+      <guid>https://doracl.github.io/tags/vscode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>confluent</title>
+      <link>https://doracl.github.io/tags/confluent/</link>
+      <pubDate>Sat, 11 May 2019 14:16:58 +0800</pubDate>
+      
+      <guid>https://doracl.github.io/tags/confluent/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>
