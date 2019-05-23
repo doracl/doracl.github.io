@@ -7,28 +7,44 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy; 2019. All rights reserved.</copyright>
-    <lastBuildDate>Sun, 12 May 2019 15:20:20 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 23 May 2019 18:34:10 +0800</lastBuildDate>
     
 	<atom:link href="https://doracl.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>折腾ksql</title>
+      <link>https://doracl.github.io/post/2019/05/%E6%8A%98%E8%85%BEksql/</link>
+      <pubDate>Thu, 23 May 2019 18:34:10 +0800</pubDate>
+      
+      <guid>https://doracl.github.io/post/2019/05/%E6%8A%98%E8%85%BEksql/</guid>
+      <description>前提，基于这个项目的kafka connector
+ 创建stream
+create stream stream_name with (kafka_topic=&#39;topic&#39;, value_format=&#39;avro&#39;);  SET &#39;auto.offset.reset&#39; = &#39;earliest&#39;;  run select
+select after-&amp;gt;&amp;quot;ID&amp;quot; from stream_name limit 1;   </description>
+    </item>
+    
+    <item>
       <title>kafka client writed by golang</title>
-      <link>https://doracl.github.io/post/20190512/</link>
+      <link>https://doracl.github.io/post/2019/05/20190512/</link>
       <pubDate>Sun, 12 May 2019 15:20:20 +0800</pubDate>
       
-      <guid>https://doracl.github.io/post/20190512/</guid>
-      <description>&amp;emsp;&amp;emsp;作为一名开发人员，其实整个职业生涯可能大部分的时间花在了踩坑、填坑（写bug、修复bug）上。就算是学习也是一种递归： 打算学A，A依赖B，然后学B，B依赖C。。。最后的结果就是要么学到XYZ，要么放弃。不忘初心好难，学到最后已经不记得最初想学的是什么了。
-&amp;emsp;&amp;emsp;confluent-kafka-goconfluent出品，正好与工作中的kafka 相关，粗略看了一下，文档还不错。个人习惯，接下来马上Getting Started，第一步：Installing librdkafka，然后就没有第二步了，因为 第一步我卡住了，手头只有windows，通过WSL使用Remote Development 是一种解决办法，不过前几天刚刚卸载了，C盘空间不允许了。不过它倒是提供了一个思路，就是通过Docker，以下是具体过程(以windows为例)：官方链接 1. 安装Docker Desktop for Windows,并设置代码所在盘符为共享盘 2.  git config --global core.autocrlf false  3. Install Visual Studio Code Insiders 4. Install the Remote Development extension pack. 5. Ctrl+Shift+P Remote-Container:Attach to running container
-注：vscode 的*Remote Development*与docker 两个插件真的是神器级别的</description>
+      <guid>https://doracl.github.io/post/2019/05/20190512/</guid>
+      <description>作为一名开发人员，其实整个职业生涯可能大部分的时间花在了踩坑、填坑（写bug、修复bug）上。就算是学习也是一种递归： 打算学A，A依赖B，然后学B，B依赖C。。。最后的结果就是要么学到XYZ，要么放弃。不忘初心好难，学到最后已经不记得最初想学的是什么了。
+confluent-kafka-goconfluent出品，正好与工作中的kafka 相关，粗略看了一下，文档还不错。个人习惯，接下来马上Getting Started，第一步：Installing librdkafka，然后就没有第二步了，因为 第一步我卡住了，手头只有windows，通过WSL使用Remote Development 是一种解决办法，不过前几天刚刚卸载了，C盘空间不允许了。不过它倒是提供了一个思路，就是通过Docker，以下是具体过程(以windows为例)：官方链接
+ 安装Docker Desktop for Windows,并设置代码所在盘符为共享盘 这一句的作用其实不太明白
+git config --global core.autocrlf false  Install Visual Studio Code Insiders
+ Install the Remote Development extension pack.
+ Ctrl+Shift+P Remote-Container:Attach to running container
+  注：vscode 的*Remote Development*与docker 两个插件真的是神器级别的</description>
     </item>
     
     <item>
       <title>作业</title>
-      <link>https://doracl.github.io/post/20190511/</link>
+      <link>https://doracl.github.io/post/2019/05/20190511/</link>
       <pubDate>Sat, 11 May 2019 14:16:58 +0800</pubDate>
       
-      <guid>https://doracl.github.io/post/20190511/</guid>
+      <guid>https://doracl.github.io/post/2019/05/20190511/</guid>
       <description>&amp;emsp;&amp;emsp;前一段时间发生了一场车祸，骑自行车时被汽车追尾了，不巧的是头碰马路牙子上了。。。出院后发现本就不理想的记忆力越发衰退。 所以萌生了还是写下来吧，当成个人历史的银行。
 &amp;emsp;&amp;emsp;这几天一直在研究Kafka的Connector。起因是偶然发了debezium这个项目，正好工作中有类似需求，谁知跟着get starting走下来， 发现这是一神器，监听数据的CRUD然后以topic的方式给kafka，这样就可以针对这些topic做太多事了，数据清洗、迁移；系统扩展、系统对接等等。 在随后的blog会写一个基于微服务多数据库(mysql)sink到postgresql单数据库中，作为帆软报表数据源，一定要近快，不知道这个过程在大脑中还 可以清晰多久。docker项目
 &amp;emsp;&amp;emsp;时常会遇到不错的github项目，以前一直在用chrome的bookmarks,但随着收藏的越来越多，意义越来越小，因为找半天还不如直接google。 用了一段时间的Bookmar Search，但 效果不佳，因为前提是我必须记得自己要找什么，这个难度对我来说太大了。其实我很清楚写blog时间久了肯定也会有这个问题，但对于一个懒人，能写 到blog里的一定是非常重要的。

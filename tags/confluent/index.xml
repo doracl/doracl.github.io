@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>confluent on 时光机</title>
+    <link>https://doracl.github.io/tags/confluent/</link>
+    <description>Recent content in confluent on 时光机</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>&amp;copy; 2019. All rights reserved.</copyright>
+    <lastBuildDate>Sat, 11 May 2019 14:16:58 +0800</lastBuildDate>
+    
+	<atom:link href="https://doracl.github.io/tags/confluent/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>作业</title>
+      <link>https://doracl.github.io/post/2019/05/20190511/</link>
+      <pubDate>Sat, 11 May 2019 14:16:58 +0800</pubDate>
+      
+      <guid>https://doracl.github.io/post/2019/05/20190511/</guid>
+      <description>&amp;emsp;&amp;emsp;前一段时间发生了一场车祸，骑自行车时被汽车追尾了，不巧的是头碰马路牙子上了。。。出院后发现本就不理想的记忆力越发衰退。 所以萌生了还是写下来吧，当成个人历史的银行。
+&amp;emsp;&amp;emsp;这几天一直在研究Kafka的Connector。起因是偶然发了debezium这个项目，正好工作中有类似需求，谁知跟着get starting走下来， 发现这是一神器，监听数据的CRUD然后以topic的方式给kafka，这样就可以针对这些topic做太多事了，数据清洗、迁移；系统扩展、系统对接等等。 在随后的blog会写一个基于微服务多数据库(mysql)sink到postgresql单数据库中，作为帆软报表数据源，一定要近快，不知道这个过程在大脑中还 可以清晰多久。docker项目
+&amp;emsp;&amp;emsp;时常会遇到不错的github项目，以前一直在用chrome的bookmarks,但随着收藏的越来越多，意义越来越小，因为找半天还不如直接google。 用了一段时间的Bookmar Search，但 效果不佳，因为前提是我必须记得自己要找什么，这个难度对我来说太大了。其实我很清楚写blog时间久了肯定也会有这个问题，但对于一个懒人，能写 到blog里的一定是非常重要的。
+&amp;emsp;&amp;emsp;本次要记录的是两个分布式消息平台nsq、nats， 感觉都不如kafka，或者环肥燕瘦吧，Pros和Cons网上比较很多。nats是因为go-micro练习grpc时用了一下，谈不上研究，研究简单易用，nsq没研究， 暂不评价。</description>
+    </item>
+    
+  </channel>
+</rss>

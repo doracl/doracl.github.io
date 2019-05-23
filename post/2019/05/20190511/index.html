@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="generator" content="Hugo 0.55.5" />
 
-  <title>时光机</title>
+  <title>作业 &middot; 时光机</title>
 
   
   
@@ -39,9 +39,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
  
-  
-  <link rel="alternate" type="application/rss+xml" title="时光机"
-    href='https://doracl.github.io/index.xml' />
   
 
   
@@ -114,11 +111,6 @@
   <div class="pure-menu social">
   <ul class="pure-menu-list">
 
-    
-    <li class="pure-menu-item">
-      <a class="pure-menu-link" href='https://doracl.github.io/index.xml'><i
-          class="fa fa-rss fa-fw"></i>RSS</a>
-    </li>
     
 
     
@@ -238,98 +230,12 @@
 
 
 <div class="header">
-  <h1>时光机</h1>
-  <h2>私人记忆助力</h2>
+  <h1>作业</h1>
+  <h2></h2>
 </div>
-
 <div class="content">
-  
-    <article>
-  <header>
-    <h2><a href="https://doracl.github.io/post/2019/05/%E6%8A%98%E8%85%BEksql/">折腾ksql</a></h2>
 
-    <div class="post-meta">
-
-  <div>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>23 May 2019, 18:34</time>
-  </div>
-
-  
-
-  
-
-  
-
-</div>
-
-  </header>
-
-  <p>
-  前提，基于这个项目的kafka connector
- 创建stream
-create stream stream_name with (kafka_topic='topic', value_format='avro');  SET 'auto.offset.reset' = 'earliest';  run select
-select after-&gt;&quot;ID&quot; from stream_name limit 1;   
-  </p>
-
-  
-</article>
-
-  
-    <article>
-  <header>
-    <h2><a href="https://doracl.github.io/post/2019/05/20190512/">kafka client writed by golang</a></h2>
-
-    <div class="post-meta">
-
-  <div>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>12 May 2019, 15:20</time>
-  </div>
-
-  
-
-  
-
-  
-  
-  
-  <div>
-    <i class="fa fa-tags fa-fw"></i>
-    
-      <a class="post-taxonomy-tag" href="https://doracl.github.io/tags/vscode">vscode</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://doracl.github.io/tags/docker">docker</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://doracl.github.io/tags/kafka">kafka</a>
-    
-  </div>
-  
-  
-
-</div>
-
-  </header>
-
-  <p>
-  作为一名开发人员，其实整个职业生涯可能大部分的时间花在了踩坑、填坑（写bug、修复bug）上。就算是学习也是一种递归： 打算学A，A依赖B，然后学B，B依赖C。。。最后的结果就是要么学到XYZ，要么放弃。不忘初心好难，学到最后已经不记得最初想学的是什么了。
-confluent-kafka-goconfluent出品，正好与工作中的kafka 相关，粗略看了一下，文档还不错。个人习惯，接下来马上Getting Started，第一步：Installing librdkafka，然后就没有第二步了，因为 第一步我卡住了，手头只有windows，通过WSL使用Remote Development 是一种解决办法，不过前几天刚刚卸载了，C盘空间不允许了。不过它倒是提供了一个思路，就是通过Docker，以下是具体过程(以windows为例)：官方链接
- 安装Docker Desktop for Windows,并设置代码所在盘符为共享盘 这一句的作用其实不太明白
-git config --global core.autocrlf false  Install Visual Studio Code Insiders
- Install the Remote Development extension pack.
- Ctrl+Shift+P Remote-Container:Attach to running container
-  注：vscode 的*Remote Development*与docker 两个插件真的是神器级别的
-  </p>
-
-  
-</article>
-
-  
-    <article>
-  <header>
-    <h2><a href="https://doracl.github.io/post/2019/05/20190511/">作业</a></h2>
-
-    <div class="post-meta">
+  <div class="post-meta">
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
@@ -356,21 +262,66 @@ git config --global core.autocrlf false  Install Visual Studio Code Insiders
 
 </div>
 
-  </header>
+  <p>&emsp;&emsp;前一段时间发生了一场车祸，骑自行车时被汽车追尾了，不巧的是头碰马路牙子上了。。。出院后发现本就不理想的记忆力越发衰退。
+所以萌生了还是写下来吧，当成个人历史的银行。</p>
+&emsp;&emsp;这几天一直在研究Kafka的Connector。起因是偶然发了debezium这个项目，正好工作中有类似需求，谁知跟着get starting走下来，
+发现这是一神器，监听数据的CRUD然后以topic的方式给kafka，这样就可以针对这些topic做太多事了，数据清洗、迁移；系统扩展、系统对接等等。
+在随后的blog会写一个基于微服务多数据库(mysql)sink到postgresql单数据库中，作为帆软报表数据源，一定要近快，不知道这个过程在大脑中还
+可以清晰多久。<a href="https://github.com/doracl/dbsinks">docker项目</a></p>
+&emsp;&emsp;时常会遇到不错的github项目，以前一直在用chrome的bookmarks,但随着收藏的越来越多，意义越来越小，因为找半天还不如直接google。
+用了一段时间的<a href="https://chrome.google.com/webstore/detail/bookmark-search/hhmokalkpaiacdofbcddkogifepbaijk">Bookmar Search</a>，但
+效果不佳，因为前提是我必须记得自己要找什么，这个难度对我来说太大了。其实我很清楚写blog时间久了肯定也会有这个问题，但对于一个懒人，能写
+到blog里的一定是非常重要的。</p>
+&emsp;&emsp;本次要记录的是两个分布式消息平台<a href="https://github.com/nsqio/nsq"><em>nsq</em></a>、<a href="https://github.com/nats-io/nats.go"><em>nats</em></a>，
+感觉都不如kafka，或者环肥燕瘦吧，Pros和Cons网上比较很多。nats是因为go-micro练习grpc时用了一下，谈不上研究，研究简单易用，nsq没研究，
+暂不评价。</p>
 
-  <p>
-  &emsp;&emsp;前一段时间发生了一场车祸，骑自行车时被汽车追尾了，不巧的是头碰马路牙子上了。。。出院后发现本就不理想的记忆力越发衰退。 所以萌生了还是写下来吧，当成个人历史的银行。
-&emsp;&emsp;这几天一直在研究Kafka的Connector。起因是偶然发了debezium这个项目，正好工作中有类似需求，谁知跟着get starting走下来， 发现这是一神器，监听数据的CRUD然后以topic的方式给kafka，这样就可以针对这些topic做太多事了，数据清洗、迁移；系统扩展、系统对接等等。 在随后的blog会写一个基于微服务多数据库(mysql)sink到postgresql单数据库中，作为帆软报表数据源，一定要近快，不知道这个过程在大脑中还 可以清晰多久。docker项目
-&emsp;&emsp;时常会遇到不错的github项目，以前一直在用chrome的bookmarks,但随着收藏的越来越多，意义越来越小，因为找半天还不如直接google。 用了一段时间的Bookmar Search，但 效果不佳，因为前提是我必须记得自己要找什么，这个难度对我来说太大了。其实我很清楚写blog时间久了肯定也会有这个问题，但对于一个懒人，能写 到blog里的一定是非常重要的。
-&emsp;&emsp;本次要记录的是两个分布式消息平台nsq、nats， 感觉都不如kafka，或者环肥燕瘦吧，Pros和Cons网上比较很多。nats是因为go-micro练习grpc时用了一下，谈不上研究，研究简单易用，nsq没研究， 暂不评价。
-  </p>
 
   
-</article>
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="https://doracl.github.io/post/2019/05/20190512/">kafka client writed by golang</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="https://doracl.github.io/post/2019/05/20190512/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
 
   
+<div id="disqus_thread"></div>
+<script type="text/javascript">
 
-  
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'disqus_xf1tOKk1dL';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
 
 </div>

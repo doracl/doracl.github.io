@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>docker on 时光机</title>
+    <link>https://doracl.github.io/tags/docker/</link>
+    <description>Recent content in docker on 时光机</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>&amp;copy; 2019. All rights reserved.</copyright>
+    <lastBuildDate>Sun, 12 May 2019 15:20:20 +0800</lastBuildDate>
+    
+	<atom:link href="https://doracl.github.io/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>kafka client writed by golang</title>
+      <link>https://doracl.github.io/post/2019/05/20190512/</link>
+      <pubDate>Sun, 12 May 2019 15:20:20 +0800</pubDate>
+      
+      <guid>https://doracl.github.io/post/2019/05/20190512/</guid>
+      <description>作为一名开发人员，其实整个职业生涯可能大部分的时间花在了踩坑、填坑（写bug、修复bug）上。就算是学习也是一种递归： 打算学A，A依赖B，然后学B，B依赖C。。。最后的结果就是要么学到XYZ，要么放弃。不忘初心好难，学到最后已经不记得最初想学的是什么了。
+confluent-kafka-goconfluent出品，正好与工作中的kafka 相关，粗略看了一下，文档还不错。个人习惯，接下来马上Getting Started，第一步：Installing librdkafka，然后就没有第二步了，因为 第一步我卡住了，手头只有windows，通过WSL使用Remote Development 是一种解决办法，不过前几天刚刚卸载了，C盘空间不允许了。不过它倒是提供了一个思路，就是通过Docker，以下是具体过程(以windows为例)：官方链接
+ 安装Docker Desktop for Windows,并设置代码所在盘符为共享盘 这一句的作用其实不太明白
+git config --global core.autocrlf false  Install Visual Studio Code Insiders
+ Install the Remote Development extension pack.
+ Ctrl+Shift+P Remote-Container:Attach to running container
+  注：vscode 的*Remote Development*与docker 两个插件真的是神器级别的</description>
+    </item>
+    
+  </channel>
+</rss>
