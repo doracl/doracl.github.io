@@ -245,6 +245,52 @@
   
     <article>
   <header>
+    <h2><a href="https://doracl.github.io/post/2019/05/%E6%8A%98%E8%85%BEksql/">折腾ksql</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>23 May 2019, 18:34</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://doracl.github.io/tags/kafka">kafka</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://doracl.github.io/tags/confluent">confluent</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://doracl.github.io/tags/ksql">ksql</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  </header>
+
+  <p>
+  前提，基于这个项目的kafka connector
+ 创建stream
+create stream stream_name with (kafka_topic='topic', value_format='avro');  SET 'auto.offset.reset' = 'earliest';  run select
+select after-&gt;&quot;ID&quot; from stream_name limit 1;   
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
     <h2><a href="https://doracl.github.io/post/2019/05/20190512/">kafka client writed by golang</a></h2>
 
     <div class="post-meta">

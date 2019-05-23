@@ -9,6 +9,30 @@
   </url>
   
   <url>
+    <loc>https://doracl.github.io/tags/</loc>
+    <lastmod>2019-05-23T18:34:10+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://doracl.github.io/tags/confluent/</loc>
+    <lastmod>2019-05-23T18:34:10+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://doracl.github.io/tags/kafka/</loc>
+    <lastmod>2019-05-23T18:34:10+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://doracl.github.io/tags/ksql/</loc>
+    <lastmod>2019-05-23T18:34:10+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://doracl.github.io/post/2019/05/%E6%8A%98%E8%85%BEksql/</loc>
     <lastmod>2019-05-23T18:34:10+08:00</lastmod>
   </url>
@@ -20,19 +44,7 @@
   </url>
   
   <url>
-    <loc>https://doracl.github.io/tags/</loc>
-    <lastmod>2019-05-12T15:20:20+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://doracl.github.io/tags/docker/</loc>
-    <lastmod>2019-05-12T15:20:20+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://doracl.github.io/tags/kafka/</loc>
     <lastmod>2019-05-12T15:20:20+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -45,12 +57,6 @@
   <url>
     <loc>https://doracl.github.io/tags/vscode/</loc>
     <lastmod>2019-05-12T15:20:20+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://doracl.github.io/tags/confluent/</loc>
-    <lastmod>2019-05-11T14:16:58+08:00</lastmod>
     <priority>0</priority>
   </url>
   

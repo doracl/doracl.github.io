@@ -7,10 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy; 2019. All rights reserved.</copyright>
-    <lastBuildDate>Sun, 12 May 2019 15:20:20 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 23 May 2019 18:34:10 +0800</lastBuildDate>
     
 	<atom:link href="https://doracl.github.io/tags/kafka/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>折腾ksql</title>
+      <link>https://doracl.github.io/post/2019/05/%E6%8A%98%E8%85%BEksql/</link>
+      <pubDate>Thu, 23 May 2019 18:34:10 +0800</pubDate>
+      
+      <guid>https://doracl.github.io/post/2019/05/%E6%8A%98%E8%85%BEksql/</guid>
+      <description>前提，基于这个项目的kafka connector
+ 创建stream
+create stream stream_name with (kafka_topic=&#39;topic&#39;, value_format=&#39;avro&#39;);  SET &#39;auto.offset.reset&#39; = &#39;earliest&#39;;  run select
+select after-&amp;gt;&amp;quot;ID&amp;quot; from stream_name limit 1;   </description>
+    </item>
     
     <item>
       <title>kafka client writed by golang</title>
