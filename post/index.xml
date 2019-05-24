@@ -18,7 +18,7 @@
       <pubDate>Thu, 23 May 2019 18:34:10 +0800</pubDate>
       
       <guid>https://doracl.github.io/post/2019/05/%E6%8A%98%E8%85%BEksql/</guid>
-      <description>前提，基于这个项目的kafka connector
+      <description>前提，基于这个项目的dbsinkskafka connector
  创建stream
 create stream stream_name with (kafka_topic=&#39;topic&#39;, value_format=&#39;avro&#39;);  SET &#39;auto.offset.reset&#39; = &#39;earliest&#39;;  run select
 select after-&amp;gt;&amp;quot;ID&amp;quot; from stream_name limit 1;   </description>

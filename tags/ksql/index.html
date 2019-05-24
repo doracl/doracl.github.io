@@ -279,7 +279,7 @@
   </header>
 
   <p>
-  前提，基于这个项目的kafka connector
+  前提，基于这个项目的dbsinkskafka connector
  创建stream
 create stream stream_name with (kafka_topic='topic', value_format='avro');  SET 'auto.offset.reset' = 'earliest';  run select
 select after-&gt;&quot;ID&quot; from stream_name limit 1;   
