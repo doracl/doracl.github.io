@@ -246,6 +246,102 @@
   
     <article>
   <header>
+    <h2><a href="https://doracl.github.io/post/2019/05/20190525/">Outbox Pattern: 可靠的微服务数据交换模式</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>25 May 2019, 09:21</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://doracl.github.io/tags/micro-service">micro service</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://doracl.github.io/tags/kafka">kafka</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  </header>
+
+  <p>
+  对于采用微服务架构的业务系统来说，很难做到只更新自身服务的数据，更多是要通知其它服务,哪些单据或档案由什么变成了什么。Outbox Pattern 使源服务 “read your own writes”，同时提供跨服务可靠，最终一致的数据交换。
+微服务，最头疼的地方就是数据问题，如果你也曾经在业务系统中使用，一定深有体会。关于其它方案的探讨就不再深入了，感兴趣的可以看一下：Reliable Microservices Data Exchange With the Outbox Pattern 接下来只是照本宣科，应用到自己系统中。
+注意：该模式与特定的实现选择并无关系，是否使用ORM，使用JPA/Hibernate，Spring Boot，等其它技术，其它语言。现在讨论一此细节 Outbox Table 的表结构：
+Column | Type | Modifiers --------------+------------------------+----------- id | uuid | not null aggregatetype | character varying(255) | not null aggregateid | character varying(255) | not null type | character varying(255) | not null payload | jsonb | not null   id: 事件的唯一标识; 可以用于消费者判断是否重复消息.
+ aggregatetype: 事件产生者的类型，比如生产订单.
+ aggregateid: 事件产生者的ID
+  </p>
+
+  
+  <footer>
+    <a href="https://doracl.github.io/post/2019/05/20190525/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="https://doracl.github.io/post/2019/05/20190524/">折腾ksql</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>23 May 2019, 18:34</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://doracl.github.io/tags/kafka">kafka</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://doracl.github.io/tags/confluent">confluent</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://doracl.github.io/tags/ksql">ksql</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  </header>
+
+  <p>
+  前提，基于这个项目的dbsinks kafka connector
+ 创建stream
+create stream stream_name with (kafka_topic='topic', value_format='avro');  SET 'auto.offset.reset' = 'earliest';  run select
+select after-&gt;&quot;ID&quot; from stream_name limit 1;   
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
     <h2><a href="https://doracl.github.io/post/2019/05/20190512/">kafka client writed by golang</a></h2>
 
     <div class="post-meta">

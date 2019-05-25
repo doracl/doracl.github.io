@@ -7,10 +7,36 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy; 2019. All rights reserved.</copyright>
-    <lastBuildDate>Sun, 12 May 2019 15:20:20 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 25 May 2019 09:21:48 +0000</lastBuildDate>
     
 	<atom:link href="https://doracl.github.io/tags/kafka/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Outbox Pattern: 可靠的微服务数据交换模式</title>
+      <link>https://doracl.github.io/post/2019/05/20190525/</link>
+      <pubDate>Sat, 25 May 2019 09:21:48 +0000</pubDate>
+      
+      <guid>https://doracl.github.io/post/2019/05/20190525/</guid>
+      <description>对于采用微服务架构的业务系统来说，很难做到只更新自身服务的数据，更多是要通知其它服务,哪些单据或档案由什么变成了什么。Outbox Pattern 使源服务 “read your own writes”，同时提供跨服务可靠，最终一致的数据交换。
+微服务，最头疼的地方就是数据问题，如果你也曾经在业务系统中使用，一定深有体会。关于其它方案的探讨就不再深入了，感兴趣的可以看一下：Reliable Microservices Data Exchange With the Outbox Pattern 接下来只是照本宣科，应用到自己系统中。
+注意：该模式与特定的实现选择并无关系，是否使用ORM，使用JPA/Hibernate，Spring Boot，等其它技术，其它语言。现在讨论一此细节 Outbox Table 的表结构：
+Column | Type | Modifiers --------------+------------------------+----------- id | uuid | not null aggregatetype | character varying(255) | not null aggregateid | character varying(255) | not null type | character varying(255) | not null payload | jsonb | not null   id: 事件的唯一标识; 可以用于消费者判断是否重复消息.
+ aggregatetype: 事件产生者的类型，比如生产订单.
+ aggregateid: 事件产生者的ID</description>
+    </item>
+    
+    <item>
+      <title>折腾ksql</title>
+      <link>https://doracl.github.io/post/2019/05/20190524/</link>
+      <pubDate>Thu, 23 May 2019 18:34:10 +0800</pubDate>
+      
+      <guid>https://doracl.github.io/post/2019/05/20190524/</guid>
+      <description>前提，基于这个项目的dbsinks kafka connector
+ 创建stream
+create stream stream_name with (kafka_topic=&#39;topic&#39;, value_format=&#39;avro&#39;);  SET &#39;auto.offset.reset&#39; = &#39;earliest&#39;;  run select
+select after-&amp;gt;&amp;quot;ID&amp;quot; from stream_name limit 1;   </description>
+    </item>
     
     <item>
       <title>kafka client writed by golang</title>
