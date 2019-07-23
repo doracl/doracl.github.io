@@ -5,7 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <meta name="generator" content="Hugo 0.56.0-DEV" />
+  <meta name="generator" content="Hugo 0.55.6" />
 
   <title>时光机</title>
 
@@ -243,6 +243,51 @@
 </div>
 
 <div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="https://doracl.github.io/post/2019/07/better-projects/">好项目记录</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>23 Jul 2019, 16:05</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://doracl.github.io/tags/opensource">opensource</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://doracl.github.io/tags/github">github</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  </header>
+
+  <p>
+  kubeapps：基于helm仓库快速部署应用的WebUI
+octosql：跨数据库查询分析工具，当前支持JSON、CSV、PostgreSQL、MySQL、Redis 配置文件如下：
+dataSources: - name: cats type: csv config: path: &quot;~/Documents/cats.csv&quot; - name: people type: redis config: address: &quot;localhost:6379&quot; password: &quot;&quot; databaseIndex: 0 databaseKeyName: &quot;id&quot;  sql:
+octosql &quot;SELECT p.city, FIRST(c.name), COUNT(DISTINCT c.name) cats, SUM(c.livesleft) catlives FROM cats c JOIN people p ON c.ownerid = p.id GROUP BY p.city ORDER BY catlives DESC LIMIT 9&quot;  输出：
++---------+--------------+------+----------+ | p.city | c.name_first | cats | catlives | +---------+--------------+------+----------+ | Warren | Zoey | 68 | 570 | | Gadsden | Snickers | 52 | 388 | | Staples | Harley | 54 | 383 | | Buxton | Lucky | 45 | 373 | | Bethany | Princess | 46 | 366 | | Noxen | Sheba | 49 | 361 | | Yorklyn | Scooter | 45 | 359 | | Tuttle | Toby | 57 | 356 | | Ada | Jasmine | 49 | 351 | +---------+--------------+------+----------+  
+  </p>
+
+  
+</article>
+
   
     <article>
   <header>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>opensource on 时光机</title>
+    <link>https://doracl.github.io/tags/opensource/</link>
+    <description>Recent content in opensource on 时光机</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>&amp;copy; 2019. All rights reserved.</copyright>
+    <lastBuildDate>Tue, 23 Jul 2019 16:05:45 +0800</lastBuildDate>
+    
+	<atom:link href="https://doracl.github.io/tags/opensource/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>好项目记录</title>
+      <link>https://doracl.github.io/post/2019/07/better-projects/</link>
+      <pubDate>Tue, 23 Jul 2019 16:05:45 +0800</pubDate>
+      
+      <guid>https://doracl.github.io/post/2019/07/better-projects/</guid>
+      <description>kubeapps：基于helm仓库快速部署应用的WebUI
+octosql：跨数据库查询分析工具，当前支持JSON、CSV、PostgreSQL、MySQL、Redis 配置文件如下：
+dataSources: - name: cats type: csv config: path: &amp;quot;~/Documents/cats.csv&amp;quot; - name: people type: redis config: address: &amp;quot;localhost:6379&amp;quot; password: &amp;quot;&amp;quot; databaseIndex: 0 databaseKeyName: &amp;quot;id&amp;quot;  sql:
+octosql &amp;quot;SELECT p.city, FIRST(c.name), COUNT(DISTINCT c.name) cats, SUM(c.livesleft) catlives FROM cats c JOIN people p ON c.ownerid = p.id GROUP BY p.city ORDER BY catlives DESC LIMIT 9&amp;quot;  输出：
++---------+--------------+------+----------+ | p.city | c.name_first | cats | catlives | +---------+--------------+------+----------+ | Warren | Zoey | 68 | 570 | | Gadsden | Snickers | 52 | 388 | | Staples | Harley | 54 | 383 | | Buxton | Lucky | 45 | 373 | | Bethany | Princess | 46 | 366 | | Noxen | Sheba | 49 | 361 | | Yorklyn | Scooter | 45 | 359 | | Tuttle | Toby | 57 | 356 | | Ada | Jasmine | 49 | 351 | +---------+--------------+------+----------+  </description>
+    </item>
+    
+  </channel>
+</rss>
